@@ -14,7 +14,7 @@ header, section, main, footer {
 }
 
 header {
-  position: relative;
+  position: relative; 
   text-align: center;
   padding: 25px 20px;
 }
@@ -53,6 +53,37 @@ header p {
   background: #f8f1e4;
 }
 
+
+.status-badge {
+  position: absolute !important;
+  top: 10px;
+  right: 15px;
+  
+  font-family: "Times New Roman", serif;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 600;
+
+  padding: 4px 10px;
+  border: 1px solid #000;
+  background: #f8f1e4;
+  
+
+  text-align: left; 
+}
+
+.status-badge::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background-color: #2e7d32;
+  border-radius: 50%;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
 .content {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -61,7 +92,8 @@ header p {
   width: 900px;
   margin: 0 auto;
   background: #f8f1e4;
-  padding: 15px 20px;
+  
+  padding: 0px 20px 15px 20px; 
 
   border-left: 1px solid #000;
   border-right: 1px solid #000;
@@ -70,6 +102,10 @@ header p {
 .main-news h2 {
   font-size: 28px;
   margin-top: 0;
+}
+
+.main-news {
+  padding-top: 15px;
 }
 
 .main-news p {
@@ -89,4 +125,282 @@ header p {
 .side-news p {
   font-size: 14px;
   text-align: justify;
+}
+
+.author-box {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-top: none;
+  border-bottom: none;
+
+  padding: 14px;
+  background: #f8f1e4;
+  font-family: "Times New Roman", serif;
+  margin-top: 15px;
+}
+
+.section h4 {
+  font-size: 16px;
+  margin: 10px 0 5px;
+  border-left: 3px solid black;
+  padding-left: 6px;
+}
+
+.section p {
+  font-size: 13px;
+  line-height: 1.5;
+  text-align: justify;
+  margin: 0 0 10px;
+}
+
+.divider {
+  border-top: 1px solid black;
+  margin: 10px 0;
+}
+
+
+.chart-section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #555;
+  margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #222;
+}
+
+
+.chart-container {
+  position: relative;
+  width: 100%;
+  max-width: 240px;
+  margin: 20px auto;
+}
+
+
+.progress-list {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0 0 0;
+}
+
+.progress-list li {
+  margin-bottom: 14px;
+}
+
+
+.progress-info {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 14px;
+  color: #222;
+  margin-bottom: 5px;
+}
+
+.tool-name {
+  font-weight: 500;
+}
+
+.tool-percent {
+  color: #3b5998;
+}
+
+
+.progress-bar-bg {
+  width: 100%;
+  height: 4px;
+  background-color: #e5e5e5;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+
+.progress-bar-fill {
+  height: 100%;
+  background-color: #3b5998;
+  border-radius: 2px;
+}
+
+.links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.links li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  margin: 6px 0;
+}
+
+.links a {
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px dotted black;
+}
+
+
+
+/* ==========================================
+   PHẦN ĐỊNH DẠNG CORRESPONDENCE (CUỐI TRANG)
+   ========================================== */
+
+.correspondence-section {
+  width: 900px;
+  margin: 0 auto;
+  background: #f8f1e4;
+  padding: 15px 20px 40px 20px;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+ box-sizing: content-box;
+}
+
+
+.correspondence-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #222;
+  margin-bottom: 25px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #222;
+}
+
+
+.correspondence-container {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 40px;
+}
+
+
+.correspondence-info h2 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 32px;
+  font-style: italic;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #111;
+}
+
+.correspondence-desc {
+  font-family: "Times New Roman", serif;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #555;
+  text-align: justify;
+  margin-bottom: 30px;
+}
+
+
+.info-meta-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.info-meta-list li {
+  margin-bottom: 12px;
+  font-size: 13px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.meta-label {
+  display: inline-block;
+  width: 80px;
+  color: #666;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.meta-value {
+  color: #000;
+  text-decoration: none;
+  border-bottom: 1px solid #000;
+  font-family: "Times New Roman", serif;
+  font-size: 15px;
+}
+
+
+.correspondence-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.form-group label {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #444;
+  margin-bottom: 5px;
+}
+
+
+.form-group input,
+.form-group textarea {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #222;
+  padding: 8px 0;
+  font-family: "Times New Roman", serif;
+  font-size: 16px;
+  color: #222;
+  outline: none;
+}
+
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #999;
+  font-style: italic;
+}
+
+.btn-send {
+  align-self: flex-start;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 24px;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.2s ease;
+}
+
+.btn-send:hover {
+  background-color: #333;
+}
+
+footer {
+  width: 900px;
+  margin: 0 auto;
+  background: #f8f1e4;
+  padding: 20px;
+
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
 }

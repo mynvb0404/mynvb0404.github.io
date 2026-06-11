@@ -1,59 +1,182 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>My Workspace</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <title>My Workspace</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="subtitle">"Where data speaks"</div>
 
-</head>
-<body>
+      <div class="status-badge">Available for contracts</div>
 
-  <header>
-    <div class="subtitle">"Where data speaks"</div>
-    <h1>NgoVuBaoMy's Portfolio</h1>
-    <p id="datetime"></p>
-  </header>
+      <h1>NgoVuBaoMy's Portfolio</h1>
+      <p id="datetime"></p>
+    </header>
 
-  <section>
-    <h2>TIN NỔI BẬT</h2>
-    <p>Đây là bài báo chính...</p>
+    <section>
+      <h2>TIN NỔI BẬT</h2>
+      <p>Đây là bài báo chính...</p>
     </section>
 
     <main class="content">
+      <article class="main-news">
+        <h2>Tin nổi bật</h2>
+        <p>Nội dung bài báo chính...</p>
+      </article>
 
-    <article class="main-news">
-    <h2>Tin nổi bật</h2>
-    <p>Nội dung bài báo chính...</p>
-    </article>
+      <aside class="side-news">
+        <div class="author-box">
+          <h3>About the Author</h3>
 
-    <aside class="side-news">
+          <div class="meta">
+            <p class="name">Ngo Vu Bao My</p>
+            <p class="role">Data Analyst</p>
+          </div>
 
-    <h3>Liên hệ</h3>
+          <div class="skills-chart-section">
+            <h4 class="chart-section-title">SKILL PROFILE</h4>
+            <div class="chart-container">
+              <canvas id="skillRadarChart"></canvas>
+            </div>
+          </div>
 
-    <div class="contact-box">
-    <p><strong>GitHub:</strong></p>
-    <a href="https://github.com/mynvb0404" target="_blank">
-      github.com/mynvb0404
-    </a>
+          <div class="divider"></div>
 
-    <p><strong>LinkedIn:</strong></p>
-    <a href="https://linkedin.com/in/yourname" target="_blank">
-      linkedin.com/in/yourname
-    </a>
+          <div class="tool-distribution-section">
+            <h4 class="chart-section-title">TOOL DISTRIBUTION</h4>
+            <ul class="progress-list">
+              <li>
+                <div class="progress-info">
+                  <span class="tool-name">SQL / dbt</span>
+                  <span class="tool-percent">38%</span>
+                </div>
+                <div class="progress-bar-bg">
+                  <div
+                    class="progress-bar-fill"
+                    style="width: 38%; background-color: #111"
+                  ></div>
+                </div>
+              </li>
+              <li>
+                <div class="progress-info">
+                  <span class="tool-name">Python</span>
+                  <span class="tool-percent">27%</span>
+                </div>
+                <div class="progress-bar-bg">
+                  <div class="progress-bar-fill" style="width: 27%"></div>
+                </div>
+              </li>
 
-    <p><strong>Email:</strong></p>
-    <span>ngovubaomy9914@gmail.com</span>
-    </div>
+              <li>
+                <div class="progress-info">
+                  <span class="tool-name">Tableau / Looker</span>
+                  <span class="tool-percent">18%</span>
+                </div>
+                <div class="progress-bar-bg">
+                  <div class="progress-bar-fill" style="width: 18%"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
 
-  </aside>
+          <div class="divider"></div>
+        </div>
+      </aside>
+    </main>
+    <section class="correspondence-section">
+      <h3 class="correspondence-title">CORRESPONDENCE</h3>
 
-  </main>
+      <div class="correspondence-container">
+        <div class="correspondence-info">
+          <h2>Commission an analysis.</h2>
+          <p class="correspondence-desc">
+            Available for data strategy consultancy, analytics engineering
+            contracts, and embedded analyst roles. Engagements begin with a
+            30-minute diagnostic call — no commitment required.
+          </p>
 
-  <footer>
-    <p>Footer</p>
-  </footer>
+          <ul class="links">
+            <li>
+              <i class="fa-brands fa-github"></i>
+              <a href="https://github.com/mynvb0404" target="_blank">https://github.com/mynvb0404</a>
+            </li>
+            <li>
+              <i class="fa-brands fa-linkedin"></i>
+              <a href="https://www.linkedin.com/in/bao-my-ngo-vu-6861222a3" target="_blank"
+                >https://linkedin.com/in/bao-my-ngo-vu</a
+              >
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope"></i>
+              <a href="mailto:ngovubaomy9914@gmail.com">ngovubaomy9914@gmail.com</a>
+            </li>
+          </ul>
+        </div>
 
-</body>
-<script src="script.js"></script>
+        <div class="correspondence-form">
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="55afe938-acb0-461b-aed6-09da2418cb94">
+            <div class="form-group">
+              <label for="fullname">FULL NAME</label>
+              <input
+                type="text"
+                id="fullname"
+                name="fullname"
+                placeholder="Your name"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email">EMAIL ADDRESS</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="your@email.com"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="organisation">ORGANISATION</label>
+              <input
+                type="text"
+                id="organisation"
+                name="organisation"
+                placeholder="Company or team"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="brief">BRIEF</label>
+              <textarea
+                id="brief"
+                name="brief"
+                rows="3"
+                placeholder="Describe the data problem, the decision it should inform, and your timeline..."
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn-send">SEND MESSAGE</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>Footer</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
